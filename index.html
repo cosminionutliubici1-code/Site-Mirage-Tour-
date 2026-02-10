@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+        header { background: #333; color: white; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .hero { background: url('hero.jpg') no-repeat center center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; }
+        .gallery, .packages, .about, .contact, .testimonials { padding: 20px; }
+        .footer { text-align: center; padding: 15px; background: #333; color: white; }
+        @media (max-width: 600px) { .hero { height: 40vh; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+</header>
+
+<section id="hero" class="hero">
+    <h1>Welcome to Our Tour</h1>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div>
+        <img src="image1.jpg" alt="Gallery Image 1" />
+        <img src="image2.jpg" alt="Gallery Image 2" />
+        <img src="image3.jpg" alt="Gallery Image 3" />
+    </div>
+</section>
+
+<section id="packages" class="packages">
+    <h2>Our Packages</h2>
+    <p>Details about the packages we offer.</p>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Information about our services and history.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <p>What our clients say.</p>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 Your Company Name</p>
+</footer>
+
+</body>
+</html>
