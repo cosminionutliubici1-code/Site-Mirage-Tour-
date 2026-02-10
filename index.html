@@ -151,6 +151,36 @@
             text-align: center;
         }
 
+        /* Stiluri pentru ofertele noi */
+        .card h3 {
+            color: #00a8e8;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .card p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .card ul {
+            text-align: left;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .card li {
+            margin-bottom: 8px;
+        }
+        
+        .optional {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border-left: 3px solid #00c3ff;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.2rem;
@@ -159,6 +189,11 @@
             nav {
                 flex-wrap: wrap;
                 gap: 15px;
+            }
+            
+            .card {
+                width: 100%;
+                max-width: 350px;
             }
         }
     </style>
@@ -238,17 +273,72 @@
 <section id="packages">
     <h2>Pachetele Noastre</h2>
     <div class="packages-container">
+        
+        <!-- Ofertele noi -->
         <div class="card">
-            <h3>Grecia Exotică</h3>
-            <p>7 zile în Santorini cu hotel 4★ și mic dejun inclus.</p>
+            <h3>București Cultural</h3>
+            <p>Excursie educativă pentru școli în capitală:</p>
+            <ul>
+                <li>Palatul Cotroceni - istorie și arhitectură</li>
+                <li>Grădina Zoologică București - animale de pe toate continentele</li>
+            </ul>
+            <div class="optional">
+                <strong>Opțional:</strong> Masă la Restaurantul LAZOO în inima pădurii
+            </div>
         </div>
+        
         <div class="card">
-            <h3>Dubai Luxury</h3>
-            <p>City break premium cu experiențe exclusiviste.</p>
+            <h3>București Distracție</h3>
+            <p>Pachet de distracție activă și relaxare:</p>
+            <ul>
+                <li>Hype Arena - escaladă, trambuline, VR</li>
+                <li>AFI Cotroceni - patinoar, roller-coaster, shopping</li>
+            </ul>
+            <div class="optional">
+                <strong>Opțional:</strong> Masă variată în Food Court AFI Cotroceni
+            </div>
         </div>
+        
         <div class="card">
-            <h3>Italia Culturală</h3>
-            <p>Excursii tematice pentru copii și grupuri organizate.</p>
+            <h3>București Educațional</h3>
+            <p>Experiențe interactive și educative pentru copii:</p>
+            <ul>
+                <li>MINA Kids - spațiu senzorial cu 15 instalații interactive</li>
+                <li>Casa Experimentelor - centru științific non-profit</li>
+            </ul>
+            <div class="optional">
+                <strong>Opțional:</strong> Masă la Berăria H în Parcul Herăstrău
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Munții Măcin & Delta</h3>
+            <p>Excursie în natură și aventură:</p>
+            <ul>
+                <li>Transport cu autocar clasificat</li>
+                <li>Animatori voluntari</li>
+                <li>Intrări la obiective incluse</li>
+            </ul>
+            <div class="optional">
+                <strong>Opțional:</strong><br>
+                - Masă elevului aventurii: 30 lei/persoană<br>
+                - Vizita pădurea de cai de la Cerna: 25 lei/persoană
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Aviator pentru o Zi</h3>
+            <p>Experiență unică de zbor la simulator profesional:</p>
+            <ul>
+                <li>Instruire personalizată cu piloți profesioniști</li>
+                <li>Explorarea bazei și facilităților</li>
+                <li>Orientare în carieră aviatică</li>
+                <li>Sesiune de zbor la simulatorul B737</li>
+            </ul>
+            <div class="optional">
+                <strong>Notă:</strong> Meniu elevului: 45-55 lei/persoană<br>
+                Dislocare autocar pentru localități învecinate: +25 lei/persoană
+            </div>
         </div>
     </div>
 </section>
@@ -263,4 +353,4 @@
 </footer>
 
 </body>
-                </html>
+            </html>
