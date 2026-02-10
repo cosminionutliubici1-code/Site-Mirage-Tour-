@@ -1,76 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page Website</title>
+    <title>Mirage Tour</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
-        header { background: #333; color: white; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .hero { background: url('hero.jpg') no-repeat center center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; }
-        .gallery, .packages, .about, .contact, .testimonials { padding: 20px; }
-        .footer { text-align: center; padding: 15px; background: #333; color: white; }
-        @media (max-width: 600px) { .hero { height: 40vh; } }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #f4f4f4; padding: 20px; text-align: center; }
+        nav { margin: 20px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; }
+        section { margin: 20px; padding: 20px; border: 1px solid #ddd; }
+        footer { text-align: center; padding: 20px; background-color: #f4f4f4; }
     </style>
+    <script>
+        function showAlert() {
+            alert('Bun venit la Mirage Tour!');
+        }
+    </script>
 </head>
-<body>
+<body onload="showAlert()">
+    <header>
+        <h1>Mirage Tour</h1>
+        <p>Contact: <a href="mailto:miragetour2662@gmail.com">miragetour2662@gmail.com</a></p>
+        <nav>
+            <a href="#home">Acasă</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#packages">Pachete</a>
+            <a href="#about">Despre</a>
+            <a href="#contact">Contact</a>
+            <a href="#testimonials">Mărturii</a>
+        </nav>
+    </header>
 
-<header>
-    <nav>
-        <a href="#hero">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#packages">Packages</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#testimonials">Testimonials</a>
-    </nav>
-</header>
+    <section id="home">
+        <h2>Acasă</h2>
+        <p>Bun venit la Mirage Tour, locul unde amintirile sunt create!</p>
+    </section>
 
-<section id="hero" class="hero">
-    <h1>Welcome to Our Tour</h1>
-</section>
+    <section id="gallery">
+        <h2>Galerie</h2>
+        <p>Descoperiți cele mai frumoase momente surprinse în tururile noastre.</p>
+    </section>
 
-<section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <div>
-        <img src="image1.jpg" alt="Gallery Image 1" />
-        <img src="image2.jpg" alt="Gallery Image 2" />
-        <img src="image3.jpg" alt="Gallery Image 3" />
-    </div>
-</section>
+    <section id="packages">
+        <h2>Pachete</h2>
+        <p>Explorați ofertele noastre special concepute pentru fiecare călător.</p>
+    </section>
 
-<section id="packages" class="packages">
-    <h2>Our Packages</h2>
-    <p>Details about the packages we offer.</p>
-</section>
+    <section id="about">
+        <h2>Despre</h2>
+        <p>Mirage Tour este dedicat oferirii unor experiențe unice de călătorie.</p>
+    </section>
 
-<section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Information about our services and history.</p>
-</section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Pentru întrebări, nu ezitați să ne contactați.</p>
+    </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
+    <section id="testimonials">
+        <h2>Mărturii</h2>
+        <p>Aici sunt câteva recenzii de la clienții noștri fericiți.</p>
+    </section>
 
-<section id="testimonials" class="testimonials">
-    <h2>Testimonials</h2>
-    <p>What our clients say.</p>
-</section>
-
-<footer class="footer">
-    <p>&copy; 2026 Your Company Name</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 Mirage Tour. Toate drepturile rezervate.</p>
+    </footer>
 </body>
 </html>
