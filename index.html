@@ -4,66 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirage Tour</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #f4f4f4; padding: 20px; text-align: center; }
-        nav { margin: 20px 0; }
-        nav a { margin: 0 15px; text-decoration: none; color: #333; }
-        section { margin: 20px; padding: 20px; border: 1px solid #ddd; }
-        footer { text-align: center; padding: 20px; background-color: #f4f4f4; }
-    </style>
-    <script>
-        function showAlert() {
-            alert('Bun venit la Mirage Tour!');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
         }
-    </script>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00c3ff;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background-color: #00c3ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #008ecc;
+        }
+
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        /* PACKAGES */
+        .packages-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        /* TESTIMONIALS */
+        .testimonial {
+            max-width: 600px;
+            margin: 20px auto;
+            font-style: italic;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
-<body onload="showAlert()">
-    <header>
-        <h1>Mirage Tour</h1>
-        <p>Contact: <a href="mailto:miragetour2662@gmail.com">miragetour2662@gmail.com</a></p>
-        <nav>
-            <a href="#home">Acasă</a>
-            <a href="#gallery">Galerie</a>
-            <a href="#packages">Pachete</a>
-            <a href="#about">Despre</a>
-            <a href="#contact">Contact</a>
-            <a href="#testimonials">Mărturii</a>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h2>Acasă</h2>
-        <p>Bun venit la Mirage Tour, locul unde amintirile sunt create!</p>
-    </section>
+<body>
 
-    <section id="gallery">
-        <h2>Galerie</h2>
-        <p>Descoperiți cele mai frumoase momente surprinse în tururile noastre.</p>
-    </section>
+<header>
+    <nav>
+        <a href="#home">Acasă</a>
+        <a href="#packages">Pachete</a>
+        <a href="#about">Despre</a>
+        <a href="#testimonials">Recenzii</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <section id="packages">
-        <h2>Pachete</h2>
-        <p>Explorați ofertele noastre special concepute pentru fiecare călător.</p>
-    </section>
+<section class="hero" id="home">
+    <div>
+        <h1>Descoperă lumea cu Mirage Tour</h1>
+        <p>Experiențe unice. Destinații de vis. Amintiri pentru o viață.</p>
+        <a href="#packages" class="btn">Vezi Pachetele</a>
+    </div>
+</section>
 
-    <section id="about">
-        <h2>Despre</h2>
-        <p>Mirage Tour este dedicat oferirii unor experiențe unice de călătorie.</p>
-    </section>
+<section id="packages">
+    <h2>Pachetele Noastre</h2>
+    <div class="packages-container">
+        <div class="card">
+            <h3>Grecia Exotică</h3>
+            <p>7 zile în Santorini cu hotel 4★ și mic dejun inclus.</p>
+        </div>
+        <div class="card">
+            <h3>Dubai Luxury</h3>
+            <p>City break premium cu experiențe exclusiviste.</p>
+        </div>
+        <div class="card">
+            <h3>Italia Romantică</h3>
+            <p>Roma & Veneția – perfect pentru cupluri.</p>
+        </div>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Pentru întrebări, nu ezitați să ne contactați.</p>
-    </section>
+<section id="about">
+    <h2>Despre Mirage Tour</h2>
+    <p>Suntem o agenție de turism dedicată oferirii celor mai frumoase experiențe de călătorie. Punem accent pe calitate, confort și siguranță.</p>
+</section>
 
-    <section id="testimonials">
-        <h2>Mărturii</h2>
-        <p>Aici sunt câteva recenzii de la clienții noștri fericiți.</p>
-    </section>
+<section id="testimonials">
+    <h2>Ce spun clienții noștri</h2>
+    <div class="testimonial">
+        „Cea mai frumoasă vacanță din viața mea! Recomand 100%!” – Andreea M.
+    </div>
+    <div class="testimonial">
+        „Servicii impecabile și organizare perfectă.” – Daniel T.
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Mirage Tour. Toate drepturile rezervate.</p>
-    </footer>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: miragetour2662@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Mirage Tour | Toate drepturile rezervate</p>
+</footer>
+
 </body>
 </html>
