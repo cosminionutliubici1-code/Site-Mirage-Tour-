@@ -21,12 +21,11 @@
             color: #333;
         }
 
-        /* NAVBAR */
         header {
             position: fixed;
             width: 100%;
             top: 0;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.8);
             padding: 15px 0;
             z-index: 1000;
         }
@@ -48,7 +47,6 @@
             color: #00c3ff;
         }
 
-        /* HERO */
         .hero {
             height: 100vh;
             background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
@@ -61,7 +59,7 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
         }
 
@@ -94,7 +92,32 @@
             margin-bottom: 40px;
         }
 
-        /* PACKAGES */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .info-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .info-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            flex: 1 1 300px;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            margin-bottom: 15px;
+            color: #00a8e8;
+        }
+
         .packages-container {
             display: flex;
             justify-content: center;
@@ -115,18 +138,12 @@
             transform: translateY(-10px);
         }
 
-        .card h3 {
-            margin-bottom: 15px;
-        }
-
-        /* TESTIMONIALS */
         .testimonial {
             max-width: 600px;
             margin: 20px auto;
             font-style: italic;
         }
 
-        /* FOOTER */
         footer {
             background-color: #111;
             color: white;
@@ -152,9 +169,9 @@
 <header>
     <nav>
         <a href="#home">Acasă</a>
-        <a href="#packages">Pachete</a>
         <a href="#about">Despre</a>
-        <a href="#testimonials">Recenzii</a>
+        <a href="#objectives">Obiective</a>
+        <a href="#packages">Pachete</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -164,6 +181,57 @@
         <h1>Descoperă lumea cu Mirage Tour</h1>
         <p>Experiențe unice. Destinații de vis. Amintiri pentru o viață.</p>
         <a href="#packages" class="btn">Vezi Pachetele</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>Despre Noi</h2>
+
+        <div class="info-grid">
+
+            <div class="info-box">
+                <h3>Viziunea Noastră</h3>
+                <p>
+                    Viziunea noastră este de a vă oferi vacanțe de neuitat, vacanțe pe care să nu le uitați nici peste 10 ani sau poate niciodată. 
+                    De la vacanțe exotice, la vacanțe culturale și nu numai, firma noastră nu vă oferă doar o vacanță, ci o experiență memorabilă.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>Misiunea Noastră</h3>
+                <p>
+                    Misiunea noastră este de a vă oferi experiențe personalizate pe baza dorințelor și bugetului dumneavoastră, 
+                    pentru a crea vacanțe de cea mai bună calitate și amintiri la cel mai ridicat nivel.
+                    Pe lângă vacanțele tipice fiecărei agenții, organizăm și excursii tematice culturale, având ca grup țintă copiii.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="objectives">
+    <div class="container">
+        <h2>Obiectivele Noastre</h2>
+
+        <div class="info-grid">
+
+            <div class="info-box">
+                <p>
+                    • De a vă oferi un timp plăcut într-o locație nouă sau într-o locație cunoscută și apreciată de dumneavoastră, 
+                    pentru a descoperi mereu locuri și obiective noi.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <p>
+                    • De a crea o experiență unică, personalizată, bazată pe nevoile și dorințele dumneavoastră. 
+                    Adaptabilitate la orice categorie de clientelă.
+                </p>
+            </div>
+
+        </div>
     </div>
 </section>
 
@@ -179,24 +247,9 @@
             <p>City break premium cu experiențe exclusiviste.</p>
         </div>
         <div class="card">
-            <h3>Italia Romantică</h3>
-            <p>Roma & Veneția – perfect pentru cupluri.</p>
+            <h3>Italia Culturală</h3>
+            <p>Excursii tematice pentru copii și grupuri organizate.</p>
         </div>
-    </div>
-</section>
-
-<section id="about">
-    <h2>Despre Mirage Tour</h2>
-    <p>Suntem o agenție de turism dedicată oferirii celor mai frumoase experiențe de călătorie. Punem accent pe calitate, confort și siguranță.</p>
-</section>
-
-<section id="testimonials">
-    <h2>Ce spun clienții noștri</h2>
-    <div class="testimonial">
-        „Cea mai frumoasă vacanță din viața mea! Recomand 100%!” – Andreea M.
-    </div>
-    <div class="testimonial">
-        „Servicii impecabile și organizare perfectă.” – Daniel T.
     </div>
 </section>
 
@@ -210,4 +263,4 @@
 </footer>
 
 </body>
-</html>
+                </html>
