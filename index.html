@@ -25,7 +25,7 @@
             position: fixed;
             width: 100%;
             top: 0;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.85);
             padding: 15px 0;
             z-index: 1000;
         }
@@ -138,12 +138,6 @@
             transform: translateY(-10px);
         }
 
-        .testimonial {
-            max-width: 600px;
-            margin: 20px auto;
-            font-style: italic;
-        }
-
         footer {
             background-color: #111;
             color: white;
@@ -151,34 +145,14 @@
             text-align: center;
         }
 
-        /* Stiluri pentru ofertele noi */
-        .card h3 {
+        #contact a {
             color: #00a8e8;
-            margin-bottom: 10px;
-            font-size: 1.4rem;
+            text-decoration: none;
+            font-weight: 600;
         }
-        
-        .card p {
-            margin-bottom: 15px;
-            line-height: 1.5;
-        }
-        
-        .card ul {
-            text-align: left;
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        
-        .card li {
-            margin-bottom: 8px;
-        }
-        
-        .optional {
-            background-color: #f0f8ff;
-            padding: 10px;
-            border-radius: 8px;
-            margin-top: 10px;
-            border-left: 3px solid #00c3ff;
+
+        #contact a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
@@ -189,11 +163,6 @@
             nav {
                 flex-wrap: wrap;
                 gap: 15px;
-            }
-            
-            .card {
-                width: 100%;
-                max-width: 350px;
             }
         }
     </style>
@@ -222,26 +191,22 @@
 <section id="about">
     <div class="container">
         <h2>Despre Noi</h2>
-
         <div class="info-grid">
-
             <div class="info-box">
                 <h3>Viziunea Noastră</h3>
                 <p>
-                    Viziunea noastră este de a vă oferi vacanțe de neuitat, vacanțe pe care să nu le uitați nici peste 10 ani sau poate niciodată. 
-                    De la vacanțe exotice, la vacanțe culturale și nu numai, firma noastră nu vă oferă doar o vacanță, ci o experiență memorabilă.
+                    Viziunea noastră este de a vă oferi vacanțe de neuitat, vacanțe pe care să nu le uitați nici peste 10 ani sau poate niciodată.
+                    De la vacanțe exotice la vacanțe culturale, firma noastră nu oferă doar o vacanță, ci o experiență memorabilă.
                 </p>
             </div>
-
             <div class="info-box">
                 <h3>Misiunea Noastră</h3>
                 <p>
-                    Misiunea noastră este de a vă oferi experiențe personalizate pe baza dorințelor și bugetului dumneavoastră, 
+                    Misiunea noastră este de a vă oferi experiențe personalizate pe baza dorințelor și bugetului dumneavoastră,
                     pentru a crea vacanțe de cea mai bună calitate și amintiri la cel mai ridicat nivel.
-                    Pe lângă vacanțele tipice fiecărei agenții, organizăm și excursii tematice culturale, având ca grup țintă copiii.
+                    Organizăm inclusiv excursii tematice culturale dedicate copiilor.
                 </p>
             </div>
-
         </div>
     </div>
 </section>
@@ -249,23 +214,19 @@
 <section id="objectives">
     <div class="container">
         <h2>Obiectivele Noastre</h2>
-
         <div class="info-grid">
-
             <div class="info-box">
                 <p>
-                    • De a vă oferi un timp plăcut într-o locație nouă sau într-o locație cunoscută și apreciată de dumneavoastră, 
+                    • Oferirea unui timp plăcut într-o locație nouă sau într-o locație cunoscută și apreciată,
                     pentru a descoperi mereu locuri și obiective noi.
                 </p>
             </div>
-
             <div class="info-box">
                 <p>
-                    • De a crea o experiență unică, personalizată, bazată pe nevoile și dorințele dumneavoastră. 
+                    • Crearea unei experiențe unice și personalizate, bazate pe nevoile și dorințele fiecărui client.
                     Adaptabilitate la orice categorie de clientelă.
                 </p>
             </div>
-
         </div>
     </div>
 </section>
@@ -273,79 +234,25 @@
 <section id="packages">
     <h2>Pachetele Noastre</h2>
     <div class="packages-container">
-        
-        <!-- Ofertele noi -->
         <div class="card">
-            <h3>București Cultural</h3>
-            <p>Excursie educativă pentru școli în capitală:</p>
-            <ul>
-                <li>Palatul Cotroceni - istorie și arhitectură</li>
-                <li>Grădina Zoologică București - animale de pe toate continentele</li>
-            </ul>
-            <div class="optional">
-                <strong>Opțional:</strong> Masă la Restaurantul LAZOO în inima pădurii
-            </div>
+            <h3>Grecia Exotică</h3>
+            <p>7 zile în Santorini cu hotel 4★ și mic dejun inclus.</p>
         </div>
-        
         <div class="card">
-            <h3>București Distracție</h3>
-            <p>Pachet de distracție activă și relaxare:</p>
-            <ul>
-                <li>Hype Arena - escaladă, trambuline, VR</li>
-                <li>AFI Cotroceni - patinoar, roller-coaster, shopping</li>
-            </ul>
-            <div class="optional">
-                <strong>Opțional:</strong> Masă variată în Food Court AFI Cotroceni
-            </div>
+            <h3>Dubai Luxury</h3>
+            <p>City break premium cu experiențe exclusiviste.</p>
         </div>
-        
         <div class="card">
-            <h3>București Educațional</h3>
-            <p>Experiențe interactive și educative pentru copii:</p>
-            <ul>
-                <li>MINA Kids - spațiu senzorial cu 15 instalații interactive</li>
-                <li>Casa Experimentelor - centru științific non-profit</li>
-            </ul>
-            <div class="optional">
-                <strong>Opțional:</strong> Masă la Berăria H în Parcul Herăstrău
-            </div>
-        </div>
-        
-        <div class="card">
-            <h3>Munții Măcin & Delta</h3>
-            <p>Excursie în natură și aventură:</p>
-            <ul>
-                <li>Transport cu autocar clasificat</li>
-                <li>Animatori voluntari</li>
-                <li>Intrări la obiective incluse</li>
-            </ul>
-            <div class="optional">
-                <strong>Opțional:</strong><br>
-                - Masă elevului aventurii: 30 lei/persoană<br>
-                - Vizita pădurea de cai de la Cerna: 25 lei/persoană
-            </div>
-        </div>
-        
-        <div class="card">
-            <h3>Aviator pentru o Zi</h3>
-            <p>Experiență unică de zbor la simulator profesional:</p>
-            <ul>
-                <li>Instruire personalizată cu piloți profesioniști</li>
-                <li>Explorarea bazei și facilităților</li>
-                <li>Orientare în carieră aviatică</li>
-                <li>Sesiune de zbor la simulatorul B737</li>
-            </ul>
-            <div class="optional">
-                <strong>Notă:</strong> Meniu elevului: 45-55 lei/persoană<br>
-                Dislocare autocar pentru localități învecinate: +25 lei/persoană
-            </div>
+            <h3>Italia Culturală</h3>
+            <p>Excursii tematice pentru copii și grupuri organizate.</p>
         </div>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: miragetour2662@gmail.com</p>
+    <p>Email: <a href="mailto:miragetour2662@gmail.com">miragetour2662@gmail.com</a></p>
+    <p>Telefon: <a href="tel:0787687894">0787 687 894</a></p>
 </section>
 
 <footer>
@@ -353,4 +260,4 @@
 </footer>
 
 </body>
-            </html>
+</html>
